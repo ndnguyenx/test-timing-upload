@@ -1,0 +1,50 @@
+.btn-area{
+  margin-bottom: 1rem;
+}
+
+.button-delete,
+.button-add {
+    max-width: fit-content;
+    margin-top: 3px;
+}
+
+.button-delete a > button {
+    width: 50px;
+    height: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 20px;
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--color-xam);
+    }
+}
+
+.button-add > button {
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: var(--color-navbar);
+    border-color: var(--color-navbar);
+}
+
+
+.list-check > button {
+  width: 50px; 
+  height: 40px;
+  color: red; 
+  border: 1px solid red; 
+  background-color: #ffe6e6; 
+  margin-top: 3px;
+  &:hover {
+    color: var(--color-white);
+    background-color: red; 
+  }
+
+  
+  svg {
+    font-size: 20px; 
+  }
+}

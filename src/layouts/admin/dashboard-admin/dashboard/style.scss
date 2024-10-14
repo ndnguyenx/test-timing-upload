@@ -1,0 +1,66 @@
+.dashboard-container {
+    width: auto;
+    padding: 2rem;
+    background-color: var(--color-background-admin-page);
+}
+
+.button-delete,
+.button-add {
+    max-width: fit-content;
+    margin-top: 3px;
+}
+
+.button-delete a > button {
+    width: 50px;
+    height: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 20px;
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--color-xam);
+    }
+}
+
+.button-add > button {
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: var(--color-navbar);
+    border-color: var(--color-navbar);
+}
+
+.content-item {
+    padding: 2rem;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    justify-items: start;
+}
+
+@media screen and (max-width: 640px) {
+    .dashboard-container {
+        .content-item {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+    .dashboard-container {
+        .content-item {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .dashboard-container {
+        .content-item {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

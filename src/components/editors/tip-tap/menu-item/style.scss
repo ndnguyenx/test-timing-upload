@@ -1,0 +1,22 @@
+.menu-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-right: 1rem;
+  padding: 0.25rem;
+
+  svg {
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover,
+  &.is-active {
+    background-color: #303030;
+  }
+}

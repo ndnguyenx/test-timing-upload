@@ -1,0 +1,83 @@
+.dashboard-container {
+    width: auto;
+    padding: 2rem;
+}
+
+.button-delete,
+.button-add {
+    max-width: fit-content;
+    margin-top: 3px;
+}
+
+.button-delete a > button {
+    width: 50px;
+    height: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 20px;
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--color-xam);
+    }
+}
+
+.button-add > button {
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: var(--color-navbar);
+    border-color: var(--color-navbar);
+}
+
+.dashboard-search {
+    margin-top: 2rem;
+}
+
+.dashboard-search-label {
+    margin-right: 1.5rem;
+    font-size: 1rem;
+}
+
+.dashboard-search-input {
+    height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    border: 1px solid #d1d3e2;
+}
+
+.dashboard-table {
+    margin-top: 2rem;
+}
+
+.ant-modal-content {
+    padding: 0 !important;
+}
+
+.ant-modal-header {
+    padding: 1rem !important;
+    background-color: var(--color-navbar) !important;
+    border-radius: 0;
+    .ant-modal-title {
+        color: var(--color-white) !important;
+    }
+}
+
+.ant-table-thead > tr > th {
+    background-color: #4e73df !important;
+    color: var(--color-white) !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.ant-table-tbody > tr:nth-child(odd) {
+    background-color: #f2f2f2 !important;
+}
+
+.ant-table-tbody > tr > td {
+    padding: 0.5rem !important;
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+.divider {
+    background-color: rgba(#fff, 0.25);
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+    width: 1px;
+}
+
+.tiptap {
+    a {
+        text-decoration: underline;
+        color: blue;
+        font-style: italic;
+    }
+}
+
+.input-color {
+    width: 8rem !important;
+}
+
+.upload-img {
+    visibility: hidden;
+}

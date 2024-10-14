@@ -1,0 +1,54 @@
+.modal-list-photos {
+    width: auto !important;
+    .ant-modal-content {
+        width: 55vw;
+        .list-photos {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            max-height: 53vh;
+            overflow-y: auto;
+
+            .wrap-photo {
+                border-radius: 1rem;
+                width: 12rem;
+                height: 12rem;
+                box-sizing: border-box;
+                cursor: pointer;
+                border: 2px solid var(--color-grey-300);
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &.add {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .photo {
+                    object-fit: cover;
+                }
+
+                .icon-check {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: var(--color-green-400);
+                }
+            }
+        }
+    }
+
+    .modal-list-photos-controls {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+    }
+}
